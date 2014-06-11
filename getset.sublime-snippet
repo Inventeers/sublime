@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[public function get${1:Var}()
+{
+	return \$this->_${1/([A-Z][a-z]*)(.*)/\l$1$2/g};
+}
+
+public function set$1(\$${2:val})
+{
+	\$this->_${1/([A-Z][a-z]*)(.*)/\l$1$2/g} = \$${2:val};
+
+	return \$this;
+}]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>getset</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>
