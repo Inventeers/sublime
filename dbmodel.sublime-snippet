@@ -2,7 +2,7 @@
 			<content><![CDATA[class $1Model extends DbModel
 {
 	protected \$_table = '${2:${1/([A-Z]+|[a-z])([A-Z][a-z]|[A-Z])/\L$1_$2/g}}';
-	protected \$_primaryKey = '${3:$2}_id';$4
+	${3:protected \$_primaryKey = '${4:$2}_id';$5}
 }]]></content>
 		<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 		<tabTrigger>mod</tabTrigger>
